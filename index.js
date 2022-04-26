@@ -5,7 +5,7 @@ const __dirname = path.resolve(path.dirname("")); // __dirname serve para inform
 
 const app = express(); // instnciando o express dentro da const app
 
-const port = 3004;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true })); // O corpo (body) da requisição
 app.use(express.json()); // converter para JSON
@@ -155,8 +155,7 @@ app.post("/cadastro", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(port, () => {
-  // listen é uma função do express para criar servidor
+app.listen(PORT, () => {
   console.clear();
-  console.log(`Rondando na porta http://localhost:${port}`);
+  console.log(`Server in http://localhost:${PORT}`);
 });

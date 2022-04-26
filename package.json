@@ -2,28 +2,30 @@
   "name": "aula-1",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
     "dev": "nodemon -e js,html,css,ejs"
   },
   "author": "raphael",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.7",
-    "express": "^4.17.3",
-    "node": "^17.7.2"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qualose123/TreinoProjeto.git"
+    "url": "git+https://github.com/qualose123/PROJETO2-MOD2-BLUEEDTECH-.git"
   },
   "bugs": {
-    "url": "https://github.com/qualose123/TreinoProjeto/issues"
+    "url": "https://github.com/qualose123/PROJETO2-MOD2-BLUEEDTECH-.git"
   },
-  "homepage": "https://github.com/qualose123/TreinoProjeto#readme",
+  "homepage": "https://github.com/qualose123/PROJETO2-MOD2-BLUEEDTECH-.git#readme",
   "description": ""
 }
