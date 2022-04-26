@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Cadastro</title>
+  </head>
+
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <main id="cadastroo">
+      <div>
+      <form method="post" action="/cadastro">
+        <fieldset id="field_main">
+          <legend>Cadastro</legend>
+          <fieldset>
+            <input type="text" name="numero" placeholder="visite https://www.pokemon.com/br/pokedex/ para saber o número do seu poke" required />
+            <label for="numero"> Número </label>
+          </fieldset>
+
+          <fieldset>
+            <input type="text" name="nome" placeholder="Nome do seu Pokémon" required />
+            <label for="nome"> Nome </label>
+          </fieldset>
+
+          <fieldset>
+            <input type="text" name="tipo" placeholder="Tipo do seu poke ex:fogo,agua,planta e etc..." required/>
+            <label for="tipo"> Tipo </label>
+          </fieldset>
+
+          <fieldset>
+            <input type="url" name="img" placeholder="Link da imagem do seu pokémon," required />
+            <label for="img"> Img </label>
+          </fieldset>
+
+          <fieldset>
+            <input type="text" name="descricao" placeholder="Breve descrição do seu pokémon" required/>
+            <label for="descricao"> Descrição </label>
+          </fieldset>
+
+          <fieldset>
+            <input type="text" name="altura" placeholder="Altura do seu pokémon ex:0,5m" required/>
+            <label for="altura"> Altura </label>
+          </fieldset>
+
+          <fieldset>
+            <input type="text" name="peso" placeholder="Peso do seu pokémon ex:6,2kg"required/>
+            <label for="peso"> Peso </label>
+          </fieldset>
+
+          <fieldset>
+            <input type="text" name="categoria" placeholder="Categoria do seu poke de acordo com o site https://www.pokemon.com/br" required/>
+            <label for="categoria"> Categoria </label>
+          </fieldset>
+
+          <fieldset>
+            <input type="text" name="habilidades" placeholder="Habilidades do seu pokemon ex: choque do trovão,lança-chamas e etc..." required/>
+            <label for="habilidades"> Habilidades </label>
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+</div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

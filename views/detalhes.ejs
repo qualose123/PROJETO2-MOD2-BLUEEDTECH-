@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Detalhes</title>
+  </head>
+
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+      <section id="detalhes">
+        <h1><%= pokemon.nome %></h1>
+        <table>
+          <thead>
+            <th colspan="2">D-E-T-A-L-H-E-S</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Número</td>
+              <td><%= pokemon.numero %></td>
+            </tr>
+
+            <tr>
+              <td>Nome</td>
+              <td><%= pokemon.nome %></td>
+            </tr>
+            <tr>
+              <td>Tipo</td>
+              <td><%= pokemon.tipo %></td>
+            </tr>
+            <tr>
+              <td>Descrição</td>
+              <td><%= pokemon.descricao %></td>
+            </tr>
+            <tr>
+              <td>Altura</td>
+              <td><%= pokemon.altura%></td>
+            </tr>
+            <tr>
+              <td>Peso</td>
+              <td><%= pokemon.peso %></td>
+            </tr>
+            <tr>
+              <td>Categoría</td>
+              <td><%= pokemon.categoria %></td>
+            </tr>
+            <tr>
+              <td>Habilidades</td>
+              <td><%= pokemon.habilidades %></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+  <%- include('./partials/footer.ejs') %>
+</html>
