@@ -1,7 +1,7 @@
 # PROJETO2-MOD2-BLUEEDTECH-
 Projeto de uma pokedéx que exibe no mínimo três pokémons na tela, te dar opção de ver os detalhes desses pokémons, tem aba de cadastrar mais pokémons que ficarão armazenados em um banco de dados fake, para cadastrar e para saber as informações do seu pokemon caso não saiba acesse: https://www.pokemon.com/br/pokedex/ la tem todas as informações que precisa, OBS: todos os campos serão obrigatórios, caso contrário não conseguirá cadastrar, ao cadastrar exibirá uma mensagem de sucesso ao cadastrar e ele aparecerá na tela.
 
-###Link deploy: https://pokembcdex.herokuapp.com/
+### Link deploy: https://pokembcdex.herokuapp.com/
 ## REQUISITOS:
 Criar um projeto no GitHub com Readme.md, .gitignore e licença;
 Iniciar um projeto node;
